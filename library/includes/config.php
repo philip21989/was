@@ -3,7 +3,7 @@ session_start();
 define('SITEFOLDER', '');
 define('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'].SITEFOLDER);
 $scheme=(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on')?'https://':'http://';
-$site_url=$scheme.$_SERVER['HTTP_HOST'].SITEFOLDER;
+$site_url='https://'.$_SERVER['HTTP_HOST'].SITEFOLDER;
 $site_url_absolute=empty($_SERVER["HTTPS"]) ? '' : ($_SERVER["HTTPS"] == "on")? "https://".$_SERVER['HTTP_HOST'] : "http://".$_SERVER['HTTP_HOST'];
 define("SITE_URL",$site_url);
 
