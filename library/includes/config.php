@@ -1,6 +1,6 @@
 <?php
 session_start();
-define('SITEFOLDER', '/');
+define('SITEFOLDER', '/app');
 define('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'].SITEFOLDER);
 $scheme=(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on')?'https://':'http://';
 $site_url=$scheme.$_SERVER['HTTP_HOST'].SITEFOLDER;
@@ -12,6 +12,8 @@ define("SITE_URL_AB",$site_url_absolute);
 define("DASHBOARD_URL",$site_url_absolute.'/dashboard');
 
 define("DOCUMENTROOT",$_SERVER['DOCUMENT_ROOT'].SITEFOLDER);
+
+echo DOCUMENTROOT;
 
 define("ASSETS", SITE_URL.'/library/assets');
 
