@@ -7,7 +7,7 @@ class DATABASE_CLASS
 	function __construct()
 	{
 		try {
-			$manager = new MongoDB\Driver\Manager();
+			$manager = new MongoDB\Driver\Manager("mongodb+srv://was_user:was_mongodb@cluster0-0v5rt.mongodb.net/test?retryWrites=true&w=majority");
 			return $manager;
 		} catch (MongoDB\Driver\Exception\Exception $e) {
             return "Exception Occurred :".$e->getMessage();
