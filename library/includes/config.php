@@ -1,6 +1,6 @@
 <?php
 session_start();
-define('SITEFOLDER', '/');
+define('SITEFOLDER', '');
 define('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'].SITEFOLDER);
 $scheme=(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on')?'https://':'http://';
 $site_url=$scheme.$_SERVER['HTTP_HOST'].SITEFOLDER;
