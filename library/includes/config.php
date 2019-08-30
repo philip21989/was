@@ -1,4 +1,5 @@
 <?php
+print_r($_SERVER);exit;
 session_start();
 define('SITEFOLDER', '/app');
 define('DOCUMENT_ROOT', $_SERVER['DOCUMENT_ROOT'].SITEFOLDER);
