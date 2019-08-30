@@ -1,0 +1,62 @@
+div.pagination {
+    padding: 10px;
+    margin: 2px;
+    float: left;
+    width: 100%;
+}
+div.ajax_pagination a {
+  margin: 0px 3px;
+  
+  text-decoration: none; /* no underline */
+ 
+}
+div.ajax_pagination a:hover, div.ajax_pagination a:active {
+  
+  background-color: #de1818;
+  color: #fff;
+}
+div.ajax_pagination span.current {
+    padding: 0.5em 0.64em 0.43em 0.64em;
+    margin: 2px;
+    background-color: #f6efcc;
+    color: #6d643c;
+}
+div.ajax_pagination span.disabled {
+    display:none;
+}
+div.ajax_pagination span {
+    float: left;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+div.ajax_pagination  b {
+    background-color: #69aa46;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-align: center;
+    float:left;
+    margin: 0px 4px;
+    
+}
+div.ajax_pagination  a {
+    float: left;
+   
+}
+.ajax_pagination {
+    margin: 10px 0;
+    float: left;
+    width: 100%;
+}
+div.pagination a {
+    background-color: #444;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    text-align: center;
+}

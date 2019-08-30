@@ -1,0 +1,129 @@
+div#calendar{
+  margin:0px auto;
+  padding:0px;
+  width: 80%;
+}
+ 
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    background-color:   #787878 ;      
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    left:11px;
+    top:0px;
+    width:97%;
+    height:40px;   
+    text-align:center;
+    margin: 0 !important;
+    border: medium none !important;
+}
+ 
+div#calendar div.header a.prev,div#calendar div.header a.next{ 
+    position:absolute;
+    top:0px;   
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+ 
+div#calendar div.header span.title{
+    color:#FFF;
+    font-size:18px;
+}
+ 
+ 
+div#calendar div.header a.prev{
+    left:0px;
+}
+ 
+div#calendar div.header a.next{
+    right:0px;
+}
+ 
+ 
+ 
+ 
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content{
+    border:1px solid #787878 ;
+    border-top:none;
+}
+ 
+ 
+ 
+div#calendar ul.label {
+    float: left;
+    height: auto;
+    margin: 5px 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+ 
+div#calendar ul.label li {
+    background-color: transparent;
+    color: #000;
+    float: left;
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    list-style-type: none;
+    margin: 0 1% 0 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 13.2%;
+}
+ 
+ 
+div#calendar ul.dates{
+    float:left;
+    margin: 0 5px;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+div.clear{
+    clear:both;
+}  
+.dates li.start {
+    clear: both;
+}
+ 
+/** overall width = width+padding-right**/
+
+
+.col_content {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 5px 0;
+}
+div#calendar ul.dates li {
+    background-color: #ddd;
+    color: #000;
+    float: left;
+    font-size: 22px;
+    list-style-type: none;
+    margin: 5px 1% 0 0;
+    min-height: 60px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 13.2%;
+}
+ 
+:focus{
+    outline:none;
+}
+ 
