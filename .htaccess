@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+
+  Options +FollowSymLinks
+  RewriteEngine On
+
+  #for Manage Admin User
+  RewriteRule ^manage-admin-user/([A-Za-z0-9-_]+)$ ./manage-admin-user.php?username=$1
+
+  #for Manage Resource User
+  RewriteRule ^manage-resource-user/([A-Za-z0-9-_]+)$ ./manage-resource-user.php?username=$1
+
+  #for Manage Task
+  RewriteRule ^manage-task/([A-Za-z0-9-_]+)$ ./manage-task.php?task_id=$1
+
+  #for Add Comment
+  RewriteRule ^add-comment/([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)$ ./add-comment.php?task_id=$1&from_page=$2
+
+  #for View Task Details
+  RewriteRule ^view-task-details/([A-Za-z0-9-_]+)$ ./view-task-details.php?task_id=$1
+
+  #Strip .php extension
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteRule ^(.*?)/?$ $1.php [L]
+
+</IfModule>
